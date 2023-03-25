@@ -1,0 +1,155 @@
+// Core variables and mixins
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/mixins";
+@import "../bootstrap-extended/mixins";
+
+// Load variable overrides
+@import "../core/variables/variables";
+@import "~bootstrap/scss/_variables.scss";
+
+// Overrides user variable
+@import "../core/variables/components-variables";
+
+// dashboard-analytics
+.sales-card {
+  // img left
+  .img-left {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  // img right
+  .img-right {
+    width: 175px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // backgound color to card
+  &.bg-analytics {
+    background: linear-gradient(118deg, rgba($primary, 1), rgba($primary, 0.7));
+    .avatar {
+      margin-bottom: 2rem;
+      svg {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+}
+
+table.dashboard-table {
+  tr th,
+  tr td {
+    &:first-child {
+      padding-left: 2rem;
+    }
+    &:last-child {
+      padding-right: 2rem;
+    }
+  }
+  td {
+    padding: 0.75rem;
+  }
+}
+
+.support-tracker-card {
+  .apexcharts-canvas {
+    top: -40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .sales-card {
+    // img left, img-right
+    .img-left,
+    .img-right {
+      width: 140px;
+    }
+  }
+}
+.cardBgColor.card-body {
+  background-color: #00c0ef !important;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+}
+.p-1.cardBgColor2.card-body {
+  background-color: #02a75b !important;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+}
+.p-1.cardBgColor3.card-body {
+  background-color: #f29c13 !important;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+}
+.p-1.cardBgColor4.card-body {
+  background-color: #f66955 !important;
+  padding: 5px 14px !important;
+  border-radius: 4px;
+}
+span.text-bold-500.txtColor {
+  color: #fff;
+  font-size: 16px;
+}
+h1.titleColor {
+  color: #fff;
+  font-weight: 600;
+}
+.table-hover-animation thead th {
+  border-top: 2px solid #797979;
+  border-bottom: 0;
+  background-color: #797979;
+  color: #fff;
+  font-size: 10px;
+}
+.card .card-header .card-title {
+  margin-bottom: 15px;
+}
+
+.table-hover-animation11 thead th {
+  border-top: 2px solid #ff0000;
+  border-bottom: 0;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+// ro
+
+.content-bx h3 {
+  background: #f00;
+  color: #ffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px 0px;
+}
+.content-bx {
+  ul {
+    padding: 10px 12px;
+    li {
+      list-style: none;
+      margin-bottom: 10px;
+    }
+  }
+}
+.bx-date {
+  width: 50px;
+  text-align: CENTER;
+  background: #2196f3;
+  border-radius: 4px;
+  float: left;
+  margin-right: 8px;
+  p {
+    color: #fff;
+  }
+  h2 {
+    color: #fff;
+  }
+}
+button.btn.btn-sm.btn-success.bg-t {
+  background: #797979 !important;
+}
